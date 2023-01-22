@@ -1,12 +1,13 @@
 limit = 4000000
-sum = 0
-a = 1
-b = 1
-c = a+b
+a = 2
+b = 8
+c = 34
+sum = 10
 while c < limit:
-  
   sum += c
-  a = b + c
-  b = c + a
-  c = a + b
+  a = b
+  b = c
+  c = 4 * b + a
+  print(a,b,c)
+
 print(sum)
